@@ -2,7 +2,6 @@ package com.neha.designPatterns.patterns;
 
 import org.springframework.stereotype.Component;
 
-@Component
 public class Creational_FactoryDatabaseLogs implements Creational_FactoryLogs {
 
 	@Override
