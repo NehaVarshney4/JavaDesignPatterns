@@ -2,6 +2,7 @@ package com.neha.designPatterns.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.neha.designPatterns.entity.BuilderRequest;
@@ -40,7 +41,7 @@ public class Creational_BuilderController{
 	
 	
 	@PostMapping("/computerBuilder")
-	public BuilderResponse computerBuilder(BuilderRequest request) {
+	public BuilderResponse computerBuilder(@RequestBody BuilderRequest request) {
 		// Create a Computer object using the Builder
 //		Creational_BuilderComputer computer1 = new Creational_BuilderComputer.
 //				ComputerBuilder("500", "8 GB")

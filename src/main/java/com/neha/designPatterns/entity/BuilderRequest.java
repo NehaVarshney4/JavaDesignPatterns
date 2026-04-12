@@ -15,14 +15,14 @@ public class BuilderRequest {
 	public String getHDD() {
 		return HDD;
 	}
-	public void setHDD(String hDD) {
-		HDD = hDD;
+	public void setHDD(String HDD) {
+		this.HDD = HDD;
 	}
 	public String getRAM() {
 		return RAM;
 	}
-	public void setRAM(String rAM) {
-		RAM = rAM;
+	public void setRAM(String RAM) {
+		this.RAM = RAM;
 	}
 	public boolean isGraphicsCardEnabled() {
 		return isGraphicsCardEnabled;

@@ -18,7 +18,7 @@ import com.neha.designPatterns.patterns.Creational_FactoryLogs;
 public class Creational_FactoryController {
 
 	@GetMapping("/factoryLogs")
-	public String factoryLogs(@RequestParam(value = "type", defaultValue = "console") String type) {
+	public String factoryLogs(@RequestParam(value = "type") String type) {
 
 		Creational_FactoryLogs factoryLogs = Creational_FactoryLoggerfactory.getLogger(type);
 		
